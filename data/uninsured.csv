@@ -1,0 +1,767 @@
+﻿city_name,state_id,Uninsured,normalized_uninsured
+Auburn,AL,5.8,0.17
+Birmingham,AL,14.4,0.41
+Wilmington,DE,7.1,0.20
+Washington,DC,4.1,0.12
+Decatur,AL,13,0.37
+Boca Raton,FL,9.8,0.28
+Bonita Springs,FL,19.9,0.57
+Boynton Beach,FL,18.6,0.53
+Bradenton,FL,19.5,0.56
+Cape Coral,FL,16.2,0.47
+Dothan,AL,12.1,0.35
+Clearwater,FL,17.3,0.50
+Coconut Creek,FL,15.7,0.45
+Coral Gables,FL,7.2,0.21
+Coral Springs,FL,13.7,0.39
+Davie,FL,12.4,0.36
+Daytona Beach,FL,18.4,0.53
+Deerfield Beach,FL,23.1,0.66
+Delray Beach,FL,16.3,0.47
+Deltona,FL,12.7,0.36
+Doral,FL,18,0.52
+Fort Lauderdale,FL,18.2,0.52
+Fort Myers,FL,19.7,0.57
+Gainesville,FL,9.3,0.27
+Hialeah,FL,25.3,0.73
+Hollywood,FL,19.8,0.57
+Homestead,FL,24.2,0.70
+Jacksonville,FL,13.7,0.39
+Jupiter,FL,11.9,0.34
+Kissimmee,FL,17.8,0.51
+Lakeland,FL,12.5,0.36
+Largo,FL,16.1,0.46
+Lauderhill,FL,17.2,0.49
+Margate,FL,19.2,0.55
+Melbourne,FL,15.3,0.44
+Miami,FL,23.2,0.67
+Miami Beach,FL,22.5,0.65
+Miami Gardens,FL,22.7,0.65
+Miramar,FL,14.4,0.41
+North Miami,FL,28.9,0.83
+North Port,FL,18.1,0.52
+Ocala,FL,16.5,0.47
+Orlando,FL,16.7,0.48
+Palm Bay,FL,14.4,0.41
+Palm Beach Gardens,FL,9.1,0.26
+Palm Coast,FL,19.2,0.55
+Pembroke Pines,FL,11.1,0.32
+Pensacola,FL,12.4,0.36
+Pinellas Park,FL,13.7,0.39
+Plantation,FL,13,0.37
+Pompano Beach,FL,25.1,0.72
+Port Orange,FL,13.5,0.39
+Port St. Lucie,FL,15.3,0.44
+St. Petersburg,FL,13.6,0.39
+Sanford,FL,16.9,0.49
+Sarasota,FL,23.3,0.67
+Sunrise,FL,15,0.43
+Tallahassee,FL,9.3,0.27
+Tamarac,FL,14.7,0.42
+Tampa,FL,13.2,0.38
+Wellington,FL,10,0.29
+Weston,FL,7,0.20
+West Palm Beach,FL,19.2,0.55
+Albany,GA,19.5,0.56
+Alpharetta,GA,6.9,0.20
+Athens,GA,15,0.43
+Atlanta,GA,11.5,0.33
+Augusta,GA,15,0.43
+Brookhaven,GA,16.5,0.47
+Columbus,GA,13.2,0.38
+Johns Creek,GA,6.5,0.19
+Macon,GA,15.1,0.43
+Marietta,GA,20.5,0.59
+Hoover,AL,6.2,0.18
+Roswell,GA,13.8,0.40
+Sandy Springs,GA,10.9,0.31
+Savannah,GA,19.5,0.56
+Huntsville,AL,11.6,0.33
+Smyrna,GA,15,0.43
+Stonecrest,GA,16.7,0.48
+Valdosta,GA,19,0.55
+Warner Robins,GA,15.4,0.44
+Mobile,AL,13.4,0.39
+Honolulu,HI,4,0.11
+Montgomery,AL,12.2,0.35
+Boise City,ID,10.3,0.30
+Caldwell,ID,15.7,0.45
+Idaho Falls,ID,10.8,0.31
+Meridian,ID,9.3,0.27
+Nampa,ID,15.2,0.44
+Pocatello,ID,10.8,0.31
+Arlington Heights,IL,5.2,0.15
+Aurora,IL,11.9,0.34
+Berwyn,IL,12.9,0.37
+Bloomington,IL,4.7,0.14
+Bolingbrook,IL,8.4,0.24
+Champaign,IL,4.7,0.14
+Chicago,IL,10.8,0.31
+Cicero,IL,19.8,0.57
+Decatur,IL,6.6,0.19
+Des Plaines,IL,10.4,0.30
+Elgin,IL,12.8,0.37
+Evanston,IL,5.4,0.16
+Hoffman Estates,IL,6.8,0.20
+Joliet,IL,8.7,0.25
+Mount Prospect,IL,9.2,0.26
+Naperville,IL,3,0.09
+Normal,IL,4.4,0.13
+Oak Lawn,IL,8.9,0.26
+Oak Park,IL,3.6,0.10
+Orland Park,IL,5.8,0.17
+Palatine,IL,11.2,0.32
+Peoria,IL,6.7,0.19
+Rockford,IL,7.9,0.23
+Schaumburg,IL,6.8,0.20
+Skokie,IL,9.9,0.28
+Springfield,IL,5.2,0.15
+Tuscaloosa,AL,8.3,0.24
+Tinley Park,IL,4.7,0.14
+Waukegan,IL,17.5,0.50
+Wheaton,IL,4.1,0.12
+Anderson,IN,12.6,0.36
+Bloomington,IN,8.9,0.26
+Carmel,IN,3.4,0.10
+Elkhart,IN,15.9,0.46
+Evansville,IN,11.6,0.33
+Fishers,IN,3.2,0.09
+Fort Wayne,IN,10.3,0.30
+Gary,IN,13.2,0.38
+Greenwood,IN,10.2,0.29
+Hammond,IN,12.7,0.36
+Indianapolis,IN,11.8,0.34
+Kokomo,IN,9,0.26
+Lafayette,IN,12.8,0.37
+Muncie,IN,10.4,0.30
+Noblesville,IN,5.8,0.17
+South Bend,IN,12.3,0.35
+Terre Haute,IN,10.4,0.30
+Ames,IA,5.7,0.16
+Ankeny,IA,3.7,0.11
+Cedar Rapids,IA,5.2,0.15
+Council Bluffs,IA,7.8,0.22
+Davenport,IA,6.5,0.19
+Des Moines,IA,7.8,0.22
+Dubuque,IA,5.7,0.16
+Iowa City,IA,6.5,0.19
+Sioux City,IA,7.4,0.21
+Waterloo,IA,7.6,0.22
+West Des Moines,IA,3.3,0.09
+Anchorage,AK,12.4,0.36
+Kansas City,KS,21,0.60
+Lawrence,KS,8.6,0.25
+Lenexa,KS,7.7,0.22
+Manhattan,KS,6.1,0.18
+Olathe,KS,8,0.23
+Overland Park,KS,6.3,0.18
+Shawnee,KS,7.1,0.20
+Topeka,KS,9.9,0.28
+Wichita,KS,13.9,0.40
+Bowling Green,KY,7.8,0.22
+Lexington,KY,7.7,0.22
+Louisville,KY,6.3,0.18
+Owensboro,KY,6.6,0.19
+Baton Rouge,LA,11.1,0.32
+Bossier City,LA,10.7,0.31
+Kenner,LA,16.8,0.48
+Lafayette,LA,10.1,0.29
+Lake Charles,LA,11.7,0.34
+New Orleans,LA,10.6,0.30
+Shreveport,LA,11.1,0.32
+Portland,ME,7.9,0.23
+Baltimore,MD,7.5,0.22
+Bowie,MD,4.1,0.12
+Frederick,MD,8.1,0.23
+Gaithersburg,MD,10.4,0.30
+Rockville,MD,7.5,0.22
+Boston,MA,3.9,0.11
+Brockton,MA,4.5,0.13
+Cambridge,MA,2.2,0.06
+Chicopee,MA,3.8,0.11
+Fall River,MA,5,0.14
+Haverhill,MA,3.7,0.11
+Lawrence,MA,7.4,0.21
+Lowell,MA,5.6,0.16
+Lynn,MA,5.5,0.16
+Malden,MA,4.8,0.14
+Medford,MA,2.8,0.08
+New Bedford,MA,5.3,0.15
+Newton,MA,1.4,0.04
+Peabody,MA,3.2,0.09
+Quincy,MA,3.7,0.11
+Revere,MA,5.9,0.17
+Somerville,MA,3.3,0.09
+Springfield,MA,4.5,0.13
+Taunton,MA,2.6,0.07
+Waltham,MA,3.9,0.11
+Weymouth Town,MA,3.4,0.10
+Worcester,MA,3.3,0.09
+Ann Arbor,MI,3,0.09
+Battle Creek,MI,6.6,0.19
+Dearborn,MI,6.8,0.20
+Dearborn Heights,MI,7.6,0.22
+Detroit,MI,9.6,0.28
+Farmington Hills,MI,4.9,0.14
+Flint,MI,8.8,0.25
+Grand Rapids,MI,9.5,0.27
+Kalamazoo,MI,8,0.23
+Kentwood,MI,6.9,0.20
+Lansing,MI,8.2,0.24
+Livonia,MI,3.4,0.10
+Novi,MI,4.9,0.14
+Pontiac,MI,13.7,0.39
+Rochester Hills,MI,3.4,0.10
+Royal Oak,MI,3.4,0.10
+St. Clair Shores,MI,4.8,0.14
+Southfield,MI,6.5,0.19
+Sterling Heights,MI,8,0.23
+Taylor,MI,6.5,0.19
+Troy,MI,3.3,0.09
+Warren,MI,7.4,0.21
+Westland,MI,6.9,0.20
+Wyoming,MI,8.4,0.24
+Apple Valley,MN,5.2,0.15
+Blaine,MN,4.2,0.12
+Bloomington,MN,6.3,0.18
+Brooklyn Park,MN,7,0.20
+Burnsville,MN,4.5,0.13
+Coon Rapids,MN,4.6,0.13
+Duluth,MN,4.3,0.12
+Eagan,MN,4.1,0.12
+Eden Prairie,MN,2.6,0.07
+Edina,MN,2.8,0.08
+Lakeville,MN,1.8,0.05
+Maple Grove,MN,2.9,0.08
+Minneapolis,MN,7.2,0.21
+Minnetonka,MN,3.1,0.09
+Plymouth,MN,3.4,0.10
+Rochester,MN,5,0.14
+St. Cloud,MN,5,0.14
+St. Paul,MN,7.2,0.21
+Woodbury,MN,3.3,0.09
+Gulfport,MS,20.9,0.60
+Jackson,MS,15.6,0.45
+Southaven,MS,9.3,0.27
+Blue Springs,MO,6.2,0.18
+Columbia,MO,7.6,0.22
+Florissant,MO,10.3,0.30
+Independence,MO,13.9,0.40
+Joplin,MO,13.2,0.38
+Kansas City,MO,13.4,0.39
+Lee's Summit,MO,4.9,0.14
+O'Fallon,MO,4.8,0.14
+St. Charles,MO,6.9,0.20
+St. Joseph,MO,12.9,0.37
+St. Louis,MO,12.2,0.35
+St. Peters,MO,5.9,0.17
+Springfield,MO,15.7,0.45
+Billings,MT,8.3,0.24
+Great Falls,MT,10.2,0.29
+Missoula,MT,7.7,0.22
+Bellevue,NE,11.4,0.33
+Grand Island,NE,14.3,0.41
+Lincoln,NE,8.8,0.25
+Omaha,NE,11.6,0.33
+Carson City,NV,12.8,0.37
+Henderson,NV,7.9,0.23
+Las Vegas,NV,14.1,0.41
+North Las Vegas,NV,14.8,0.43
+Reno,NV,11.4,0.33
+Sparks,NV,10.9,0.31
+Manchester,NH,11.3,0.32
+Nashua,NH,6.9,0.20
+Bayonne,NJ,11.3,0.32
+Burlington,NJ,8.3,0.24
+Camden,NJ,12.7,0.36
+Clayton,NJ,5.8,0.17
+Clifton,NJ,12.1,0.35
+East Orange,NJ,13.6,0.39
+Egg Harbor City,NJ,18.9,0.54
+Elizabeth,NJ,22.7,0.65
+Glassboro,NJ,5.6,0.16
+Hammonton,NJ,9.9,0.28
+Hoboken,NJ,2.3,0.07
+Jersey City,NJ,12.5,0.36
+Lawnside,NJ,8.9,0.26
+Millville,NJ,4.8,0.14
+Newark,NJ,19.1,0.55
+New Brunswick,NJ,18.8,0.54
+Passaic,NJ,25.1,0.72
+Paterson,NJ,19.6,0.56
+Penns Grove,NJ,18.4,0.53
+Perth Amboy,NJ,18.7,0.54
+Plainfield,NJ,28.8,0.83
+Pleasantville,NJ,13.5,0.39
+Salem,NJ,5.9,0.17
+Trenton,NJ,19.4,0.56
+Union City,NJ,25.8,0.74
+Vineland,NJ,10.7,0.31
+West New York,NJ,24.1,0.69
+Albuquerque,NM,9.1,0.26
+Las Cruces,NM,8.8,0.25
+Rio Rancho,NM,6,0.17
+Santa Fe,NM,16.4,0.47
+Albany,NY,5.5,0.16
+Buffalo,NY,5.1,0.15
+Hempstead,NY,15.3,0.44
+Mount Vernon,NY,7.2,0.21
+New Rochelle,NY,11,0.32
+New York,NY,8.6,0.25
+Rochester,NY,5.7,0.16
+Schenectady,NY,7.4,0.21
+Syracuse,NY,5.6,0.16
+Utica,NY,6.9,0.20
+White Plains,NY,11.3,0.32
+Yonkers,NY,8.5,0.24
+Asheville,NC,12.9,0.37
+Burlington,NC,15.6,0.45
+Cary,NC,6.3,0.18
+Chapel Hill,NC,5.3,0.15
+Charlotte,NC,13.8,0.40
+Concord,NC,9.7,0.28
+Durham,NC,13.9,0.40
+Fayetteville,NC,11.4,0.33
+Gastonia,NC,11.2,0.32
+Greensboro,NC,11.7,0.34
+Greenville,NC,10.3,0.30
+High Point,NC,12.3,0.35
+Huntersville,NC,6.4,0.18
+Jacksonville,NC,7.4,0.21
+Raleigh,NC,11.4,0.33
+Rocky Mount,NC,10.9,0.31
+Wilmington,NC,12.2,0.35
+Winston-Salem,NC,14.2,0.41
+Bismarck,ND,7.1,0.20
+Fargo,ND,7.3,0.21
+Grand Forks,ND,7.5,0.22
+Akron,OH,10,0.29
+Canton,OH,9.5,0.27
+Cincinnati,OH,8.2,0.24
+Cleveland,OH,8.8,0.25
+Columbus,OH,9.8,0.28
+Dayton,OH,10.6,0.30
+Elyria,OH,8.9,0.26
+Hamilton,OH,9.4,0.27
+Kettering,OH,6.6,0.19
+Lakewood,OH,8.2,0.24
+Lorain,OH,8.2,0.24
+Parma,OH,6.8,0.20
+Springfield,OH,9.1,0.26
+Toledo,OH,8.3,0.24
+Youngstown,OH,7.9,0.23
+Broken Arrow,OK,11.1,0.32
+Edmond,OK,8.3,0.24
+Enid,OK,18.1,0.52
+Lawton,OK,15.9,0.46
+Avondale,AZ,12,0.34
+Midwest City,OK,14.5,0.42
+Moore,OK,11.1,0.32
+Norman,OK,10.9,0.31
+Oklahoma City,OK,16.5,0.47
+Tulsa,OK,19,0.55
+Buckeye,AZ,8.8,0.25
+Albany,OR,8,0.23
+Casa Grande,AZ,11.2,0.32
+Beaverton,OR,9.5,0.27
+Bend,OR,9.5,0.27
+Corvallis,OR,6.7,0.19
+Chandler,AZ,8.1,0.23
+Eugene,OR,7.9,0.23
+Gresham,OR,9,0.26
+Hillsboro,OR,6.6,0.19
+Medford,OR,10.9,0.31
+Portland,OR,7.3,0.21
+Salem,OR,8.5,0.24
+Springfield,OR,8.4,0.24
+Tigard,OR,8.6,0.25
+Allentown,PA,12.6,0.36
+Bethlehem,PA,8.4,0.24
+Erie,PA,7.7,0.22
+Flagstaff,AZ,10.4,0.30
+Lancaster,PA,8.9,0.26
+Philadelphia,PA,9.3,0.27
+Pittsburgh,PA,6.1,0.18
+Reading,PA,10.9,0.31
+Scranton,PA,6.6,0.19
+Gilbert,AZ,5.7,0.16
+Glendale,AZ,13.8,0.40
+Goodyear,AZ,8.2,0.24
+Lake Havasu City,AZ,13.7,0.39
+Cranston,RI,4,0.11
+Pawtucket,RI,7,0.20
+Providence,RI,8.3,0.24
+Mesa,AZ,14.5,0.42
+Warwick,RI,4.3,0.12
+Charleston,SC,9.4,0.27
+Columbia,SC,9.9,0.28
+Greenville,SC,11.6,0.33
+Peoria,AZ,7.5,0.22
+Mount Pleasant,SC,5.7,0.16
+Phoenix,AZ,15.5,0.45
+North Charleston,SC,20,0.57
+Rock Hill,SC,11.4,0.33
+Scottsdale,AZ,7.4,0.21
+Rapid City,SD,14.1,0.41
+Sioux Falls,SD,8.9,0.26
+Bartlett,TN,5.5,0.16
+Chattanooga,TN,12.4,0.36
+Surprise,AZ,8,0.23
+Clarksville,TN,9.1,0.26
+Franklin,TN,7,0.20
+Tempe,AZ,9.7,0.28
+Hendersonville,TN,9.6,0.28
+Jackson,TN,11.6,0.33
+Johnson City,TN,11,0.32
+Kingsport,TN,10.6,0.30
+Knoxville,TN,11.5,0.33
+Memphis,TN,15.5,0.45
+Murfreesboro,TN,9.5,0.27
+Nashville,TN,13.5,0.39
+Tucson,AZ,13.3,0.38
+Abilene,TX,15.8,0.45
+Allen,TX,7.7,0.22
+Amarillo,TX,18.8,0.54
+Arlington,TX,20,0.57
+Austin,TX,14.7,0.42
+Baytown,TX,24.4,0.70
+Beaumont,TX,22.7,0.65
+Brownsville,TX,34.6,0.99
+Bryan,TX,20.4,0.59
+Carrollton,TX,16.8,0.48
+Cedar Park,TX,8.7,0.25
+College Station,TX,8.6,0.25
+Conroe,TX,23.3,0.67
+Corpus Christi,TX,19.8,0.57
+Dallas,TX,26,0.75
+Denton,TX,16.9,0.49
+DeSoto,TX,10.7,0.31
+Edinburg,TX,25,0.72
+El Paso,TX,21.5,0.62
+Euless,TX,15.8,0.45
+Flower Mound,TX,5.7,0.16
+Fort Worth,TX,20,0.57
+Frisco,TX,7,0.20
+Garland,TX,26.1,0.75
+Georgetown,TX,10,0.29
+Grand Prairie,TX,20.1,0.58
+Grapevine,TX,12.4,0.36
+Harlingen,TX,23.4,0.67
+Houston,TX,25.4,0.73
+Irving,TX,21.6,0.62
+Killeen,TX,13.1,0.38
+Laredo,TX,30,0.86
+League City,TX,7.9,0.23
+Lewisville,TX,17.8,0.51
+Longview,TX,22.6,0.65
+Lubbock,TX,14.7,0.42
+McAllen,TX,28.4,0.82
+McKinney,TX,11.3,0.32
+Mansfield,TX,7.6,0.22
+Mesquite,TX,22.8,0.66
+Midland,TX,18.5,0.53
+Mission,TX,31,0.89
+Missouri City,TX,10.5,0.30
+New Braunfels,TX,14.2,0.41
+North Richland Hills,TX,13.9,0.40
+Odessa,TX,20,0.57
+Yuma,AZ,13.1,0.38
+Pasadena,TX,28.8,0.83
+Pearland,TX,7.7,0.22
+Pflugerville,TX,10.9,0.31
+Pharr,TX,34.8,1.00
+Plano,TX,12.5,0.36
+Port Arthur,TX,32.9,0.95
+Richardson,TX,15.2,0.44
+Round Rock,TX,10,0.29
+Rowlett,TX,13.2,0.38
+San Angelo,TX,16.1,0.46
+San Antonio,TX,18.7,0.54
+San Marcos,TX,17.2,0.49
+Sugar Land,TX,7.7,0.22
+Temple,TX,14,0.40
+Tyler,TX,19.2,0.55
+Victoria,TX,21.7,0.62
+Waco,TX,17.4,0.50
+Wichita Falls,TX,17.3,0.50
+Layton,UT,10.1,0.29
+Lehi,UT,5.4,0.16
+Millcreek,UT,9.2,0.26
+Ogden,UT,15.3,0.44
+Orem,UT,12.1,0.35
+Provo,UT,11.9,0.34
+St. George,UT,15.9,0.46
+Salt Lake City,UT,13.8,0.40
+Sandy,UT,8.3,0.24
+South Jordan,UT,4.6,0.13
+Taylorsville,UT,12.6,0.36
+West Jordan,UT,10.9,0.31
+West Valley City,UT,19.7,0.57
+Burlington,VT,3.9,0.11
+Alexandria,VA,11.9,0.34
+Chesapeake,VA,8.3,0.24
+Hampton,VA,9.5,0.27
+Harrisonburg,VA,13.6,0.39
+Leesburg,VA,10.5,0.30
+Lynchburg,VA,10.5,0.30
+Conway,AR,9.4,0.27
+Newport News,VA,12.7,0.36
+Norfolk,VA,13.4,0.39
+Portsmouth,VA,11.7,0.34
+Richmond,VA,13.6,0.39
+Roanoke,VA,12.8,0.37
+Suffolk,VA,7.3,0.21
+Virginia Beach,VA,8.8,0.25
+Fayetteville,AR,9,0.26
+Fort Smith,AR,14,0.40
+Auburn,WA,9.4,0.27
+Bellevue,WA,5.1,0.15
+Bellingham,WA,5.9,0.17
+Burien,WA,12.5,0.36
+Everett,WA,10.7,0.31
+Federal Way,WA,10.1,0.29
+Kennewick,WA,9.3,0.27
+Kent,WA,9.2,0.26
+Kirkland,WA,4.3,0.12
+Lakewood,WA,11,0.32
+Marysville,WA,5.7,0.16
+Pasco,WA,14.3,0.41
+Jonesboro,AR,10.2,0.29
+Redmond,WA,3,0.09
+Renton,WA,8,0.23
+Richland,WA,6.4,0.18
+Sammamish,WA,1.3,0.04
+Seattle,WA,4.6,0.13
+Shoreline,WA,6.6,0.19
+Spokane,WA,6.6,0.19
+Spokane Valley,WA,8.2,0.24
+Tacoma,WA,8.2,0.24
+Vancouver,WA,9.2,0.26
+Yakima,WA,14.6,0.42
+Little Rock,AR,9.6,0.28
+Charleston,WV,7.5,0.22
+Appleton,WI,5.9,0.17
+North Little Rock,AR,11.3,0.32
+Eau Claire,WI,6.9,0.20
+Green Bay,WI,9,0.26
+Janesville,WI,6.2,0.18
+Kenosha,WI,8.3,0.24
+La Crosse,WI,6.2,0.18
+Madison,WI,4.4,0.13
+Milwaukee,WI,10.3,0.30
+Oshkosh,WI,6.2,0.18
+Racine,WI,8.2,0.24
+Waukesha,WI,5.8,0.17
+West Allis,WI,6.7,0.19
+Rogers,AR,13.9,0.40
+Casper,WY,15.7,0.45
+Cheyenne,WY,8,0.23
+Springdale,AR,19.4,0.56
+Alameda,CA,3.5,0.10
+Alhambra,CA,7,0.20
+Aliso Viejo,CA,3.6,0.10
+Anaheim,CA,13.4,0.39
+Antioch,CA,7,0.20
+Apple Valley,CA,6.4,0.18
+Arcadia,CA,5.5,0.16
+Bakersfield,CA,8.1,0.23
+Baldwin Park,CA,11.8,0.34
+Bellflower,CA,11.5,0.33
+Berkeley,CA,3.4,0.10
+Brentwood,CA,2.6,0.07
+Buena Park,CA,9.5,0.27
+Burbank,CA,7.2,0.21
+Camarillo,CA,6.1,0.18
+Carlsbad,CA,5.5,0.16
+Carson,CA,8.4,0.24
+Cathedral City,CA,14.9,0.43
+Cerritos,CA,5.4,0.16
+Chico,CA,7.7,0.22
+Chino,CA,9.8,0.28
+Chino Hills,CA,4.7,0.14
+Chula Vista,CA,8.1,0.23
+Citrus Heights,CA,6.9,0.20
+Clovis,CA,5,0.14
+Colton,CA,8.8,0.25
+Compton,CA,12.5,0.36
+Concord,CA,7.3,0.21
+Corona,CA,9.8,0.28
+Costa Mesa,CA,13.1,0.38
+Cupertino,CA,2.2,0.06
+Daly City,CA,5.8,0.17
+Davis,CA,3.8,0.11
+Delano,CA,8.7,0.25
+Diamond Bar,CA,6.8,0.20
+Downey,CA,11.4,0.33
+Dublin,CA,2.5,0.07
+Eastvale,CA,4.3,0.12
+El Cajon,CA,8.7,0.25
+Elk Grove,CA,2.8,0.08
+El Monte,CA,15.4,0.44
+Encinitas,CA,6.1,0.18
+Escondido,CA,13.8,0.40
+Fairfield,CA,5.1,0.15
+Folsom,CA,2.7,0.08
+Fontana,CA,10.2,0.29
+Fountain Valley,CA,6.3,0.18
+Fremont,CA,1.9,0.05
+Fresno,CA,9.1,0.26
+Fullerton,CA,7.3,0.21
+Gardena,CA,12.3,0.35
+Garden Grove,CA,9.2,0.26
+Gilroy,CA,6.7,0.19
+Glendale,CA,8.6,0.25
+Glendora,CA,5.9,0.17
+Hanford,CA,7.1,0.20
+Hawthorne,CA,13.6,0.39
+Hayward,CA,5.2,0.15
+Hemet,CA,11.2,0.32
+Hesperia,CA,8.4,0.24
+Highland,CA,10.3,0.30
+Huntington Beach,CA,6,0.17
+Huntington Park,CA,18.9,0.54
+Indio,CA,9.4,0.27
+Inglewood,CA,13.7,0.39
+Irvine,CA,4.9,0.14
+Jurupa Valley,CA,14.1,0.41
+Laguna Niguel,CA,4.6,0.13
+La Habra,CA,10.6,0.30
+Lake Elsinore,CA,8.9,0.26
+Lake Forest,CA,6.8,0.20
+Lakewood,CA,5.2,0.15
+La Mesa,CA,7.1,0.20
+Lancaster,CA,5.8,0.17
+Livermore,CA,3.3,0.09
+Lodi,CA,7.5,0.22
+Long Beach,CA,9.4,0.27
+Los Angeles,CA,12.8,0.37
+Lynwood,CA,16.7,0.48
+Madera,CA,10.2,0.29
+Manteca,CA,5.1,0.15
+Menifee,CA,7.1,0.20
+Merced,CA,8.3,0.24
+Milpitas,CA,2.5,0.07
+Mission Viejo,CA,5.1,0.15
+Modesto,CA,6.6,0.19
+Montebello,CA,12.7,0.36
+Monterey Park,CA,7.9,0.23
+Moreno Valley,CA,11.8,0.34
+Mountain View,CA,5.5,0.16
+Murrieta,CA,6.7,0.19
+Napa,CA,8.2,0.24
+National City,CA,14.4,0.41
+Newport Beach,CA,3.7,0.11
+Norwalk,CA,10.6,0.30
+Novato,CA,4.4,0.13
+Oakland,CA,8.9,0.26
+Oceanside,CA,10.7,0.31
+Ontario,CA,11.1,0.32
+Orange,CA,8.7,0.25
+Oxnard,CA,18.7,0.54
+Palmdale,CA,8.5,0.24
+Palm Desert,CA,9.1,0.26
+Palo Alto,CA,2.5,0.07
+Paramount,CA,12.1,0.35
+Pasadena,CA,8.4,0.24
+Perris,CA,10.6,0.30
+Petaluma,CA,4.8,0.14
+Pico Rivera,CA,10.5,0.30
+Pittsburg,CA,7.9,0.23
+Placentia,CA,6.9,0.20
+Pleasanton,CA,2.4,0.07
+Pomona,CA,13.5,0.39
+Porterville,CA,8.3,0.24
+Rancho Cordova,CA,7.2,0.21
+Rancho Cucamonga,CA,5.2,0.15
+Redding,CA,7.5,0.22
+Redlands,CA,5.7,0.16
+Redondo Beach,CA,3.8,0.11
+Redwood City,CA,5.9,0.17
+Rialto,CA,13.4,0.39
+Richmond,CA,11.5,0.33
+Riverside,CA,10.3,0.30
+Rocklin,CA,4.7,0.14
+Rosemead,CA,8.2,0.24
+Roseville,CA,4.7,0.14
+Sacramento,CA,6.6,0.19
+Salinas,CA,14.3,0.41
+San Bernardino,CA,12.8,0.37
+San Buenaventura (Ventura),CA,7.8,0.22
+San Clemente,CA,4.7,0.14
+San Diego,CA,8.8,0.25
+San Francisco,CA,4.2,0.12
+San Jose,CA,5.8,0.17
+San Leandro,CA,6.1,0.18
+San Marcos,CA,9.7,0.28
+San Mateo,CA,4.8,0.14
+San Rafael,CA,8.4,0.24
+San Ramon,CA,2.3,0.07
+Santa Ana,CA,16.9,0.49
+Santa Barbara,CA,12.1,0.35
+Santa Clara,CA,3.4,0.10
+Santa Clarita,CA,6.4,0.18
+Santa Cruz,CA,5.4,0.16
+Santa Maria,CA,20,0.57
+Santa Monica,CA,5.4,0.16
+Santa Rosa,CA,8.9,0.26
+Santee,CA,5,0.14
+Simi Valley,CA,5.6,0.16
+South Gate,CA,16.5,0.47
+South San Francisco,CA,5.3,0.15
+Stockton,CA,7.6,0.22
+Sunnyvale,CA,3.9,0.11
+Temecula,CA,7,0.20
+Thousand Oaks,CA,5.8,0.17
+Torrance,CA,5.5,0.16
+Tracy,CA,6.7,0.19
+Tulare,CA,9.2,0.26
+Turlock,CA,5.5,0.16
+Tustin,CA,8.4,0.24
+Union City,CA,2.4,0.07
+Upland,CA,6.7,0.19
+Vacaville,CA,4.9,0.14
+Vallejo,CA,5.8,0.17
+Victorville,CA,8.1,0.23
+Visalia,CA,6.2,0.18
+Vista,CA,12.8,0.37
+Walnut Creek,CA,3.6,0.10
+Watsonville,CA,8.6,0.25
+West Covina,CA,7.6,0.22
+Westminster,CA,7.9,0.23
+West Sacramento,CA,4.8,0.14
+Whittier,CA,7.1,0.20
+Woodland,CA,8.4,0.24
+Yorba Linda,CA,3.4,0.10
+Yuba City,CA,10,0.29
+Yucaipa,CA,6.4,0.18
+Arvada,CO,6,0.17
+Aurora,CO,12.5,0.36
+Boulder,CO,4.6,0.13
+Broomfield,CO,4.9,0.14
+Castle Rock,CO,4.4,0.13
+Centennial,CO,3.9,0.11
+Colorado Springs,CO,8.9,0.26
+Commerce City,CO,9.5,0.27
+Denver,CO,10.3,0.30
+Fort Collins,CO,6.7,0.19
+Grand Junction,CO,10.6,0.30
+Greeley,CO,9.5,0.27
+Lakewood,CO,9.3,0.27
+Longmont,CO,7.6,0.22
+Loveland,CO,7,0.20
+Parker,CO,3.9,0.11
+Pueblo,CO,9.1,0.26
+Thornton,CO,9,0.26
+Westminster,CO,7.3,0.21
+Bridgeport,CT,15.1,0.43
+Bristol,CT,4.8,0.14
+Danbury,CT,18.5,0.53
+Hartford,CT,10.1,0.29
+Meriden,CT,5.7,0.16
+Milford,CT,3.4,0.10
+New Britain,CT,6.2,0.18
+New Haven,CT,9.8,0.28
+Norwalk,CT,19.4,0.56
+Stamford,CT,12.1,0.35
+Waterbury,CT,9.2,0.26
+West Haven,CT,8.4,0.24
