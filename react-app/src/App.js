@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Chart from './components/Chart/Chart.jsx';
 import SearchBar from './components/SearchBar';
 import cities from './static_data/final500CitiesLimited.json';
 
@@ -25,6 +26,9 @@ function App() {
           Learn React
         </a> */}
       </header>
+      <div className="chartPanel">
+        <Chart />
+      </div>
     </div>
   );
 }

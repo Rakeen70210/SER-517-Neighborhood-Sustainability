@@ -6,7 +6,6 @@ export default function DomainInfo({info, obj}) {
 
 
 	var rows = []	
-	var colName;
 
 	for (const [key, value] of Object.entries(info)) {
 		if(key !== "name" && key !== "score"){
