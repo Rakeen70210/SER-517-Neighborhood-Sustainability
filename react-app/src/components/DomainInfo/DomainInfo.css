@@ -1,0 +1,24 @@
+.toggle {
+	width: 100%;
+	background: #0022121;
+	border: unset;
+	cursor: pointer;
+	font: unset;
+	padding: 0.3rem;
+	border-radius: 5px;
+	margin-bottom: 0.5rem;
+	color: white;
+}
+
+.toggle.Ecology{
+	background: #FF1700;
+}
+.toggle.Economics{
+	background: #005EFD;
+}
+.toggle.Politics{
+	background: #BDA74E;
+}
+.toggle.Culture{
+	background: #3E6315;
+}
