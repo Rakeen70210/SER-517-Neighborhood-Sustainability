@@ -5,20 +5,61 @@
 	cursor: pointer;
 	font: unset;
 	padding: 0.3rem;
-	border-radius: 5px;
 	margin-bottom: 0.5rem;
+	color: white;
+	border: 5px solid rgba(0,0,0, 0.45);
+	font-family: 'Lato';
+	font-size: inherit;
+	padding: 25px 8px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.toggle:hover {
+	border: 15px solid rgba(0,0,0, 0.45);
+}
+
+
+/*  buttons */
+.toggle.Ecology { background: #c0392b;}
+.toggle.Economics{ background: #005EFD; }
+.toggle.Politics{ background: #BDA74E; }
+.toggle.Culture{ background: #3E6315; }
+
+/* ------------------------------------------- */
+
+
+.contents {
 	color: white;
 }
 
-.toggle.Ecology{
-	background: #FF1700;
-}
-.toggle.Economics{
-	background: #005EFD;
-}
-.toggle.Politics{
-	background: #BDA74E;
-}
-.toggle.Culture{
-	background: #3E6315;
-}
+ul {
+	list-style-type: none;	
+	}
+
+h3:hover {
+	color: rgba(255,255,255, 0.45);
+
+	/* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 48% 52%, rgba(64, 56, 56, 1) 54%, rgba(135, 128, 128, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 48% 52%, rgba(64, 56, 56, 1) 54%, rgba(135, 128, 128, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 48% 52%, rgba(64, 56, 56, 1) 54%, rgba(135, 128, 128, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 48% 52%, rgba(64, 56, 56, 1) 54%, rgba(135, 128, 128, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 48% 52%, rgba(64, 56, 56, 1) 54%, rgba(135, 128, 128, 1) 100%);
+	}
+

@@ -100,10 +100,12 @@ export default function Chart({ city }) {
     return <>
         <div className="chart">
             <PolarArea data={data} />
-            <DomainInfo info={city.Ecology} obj={city} />
-            <DomainInfo info={city.Economics} obj={city}/>
-            <DomainInfo info={city.Politics} obj={city}/>
-            <DomainInfo info={city.Culture} obj={city}/>
+            <div className = "breakdown">
+                <DomainInfo info={city.Ecology} obj={city}/>
+                <DomainInfo info={city.Economics} obj={city}/>
+                <DomainInfo info={city.Politics} obj={city}/>
+                <DomainInfo info={city.Culture} obj={city}/>
+            </div>
         </div>
     </>
 }

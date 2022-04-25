@@ -1,0 +1,18 @@
+.breakdown 
+{
+   /* ff 3.6+ */
+    background:-moz-radial-gradient(ellipse at 47% 52%, rgba(98, 98, 98, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(33, 32, 58, 1) 0%, rgba(51, 54, 64, 1) 98%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(ellipse at 47% 52%, rgba(98, 98, 98, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(33, 32, 58, 1) 0%, rgba(51, 54, 64, 1) 98%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(ellipse at 47% 52%, rgba(98, 98, 98, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(33, 32, 58, 1) 0%, rgba(51, 54, 64, 1) 98%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(ellipse at 47% 52%, rgba(98, 98, 98, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(33, 32, 58, 1) 0%, rgba(51, 54, 64, 1) 98%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(ellipse at 47% 52%, rgba(98, 98, 98, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(54, 49, 49, 1) 0%, rgba(33, 32, 58, 1) 0%, rgba(51, 54, 64, 1) 98%);
+
+}
