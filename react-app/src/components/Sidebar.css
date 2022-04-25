@@ -1,0 +1,48 @@
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+
+  .button-bar {
+    position: fixed;
+    width: 95%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  .nav-menu {
+    background: url('../black_background_texture.jpg') no-repeat center center fixed;
+    /* background-color: #1a1a1a; */
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 100%;
+    transition: 850ms;
+    z-index: 5;
+    overflow-y:auto
+  }
+  
+  .nav-menu.active {
+    left: 70%;
+    transition: 500ms;
+  }
+  
+  .nav-menu-items {
+    width: 90%;
+  }
+  
+  .navbar-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
