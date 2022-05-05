@@ -47,9 +47,8 @@ def get_all_details(link):
             else:
                 val = int(td_ptr.text.replace(",", ""), 10)
 
-            if val < numer:
+            if val > numer:
                 numer = val
-                print('val is less than numer')
             print(val)
             denom += val
         print(numer, " and  ", denom)

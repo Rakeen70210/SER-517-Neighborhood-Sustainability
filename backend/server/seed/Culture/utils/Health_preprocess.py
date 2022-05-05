@@ -96,19 +96,25 @@ cities = ["New York", "Los Angeles", "Chicago", "Miami", "Dallas", "Philadelphia
           "Mount Vernon", "Redondo Beach", "Kenner", "Schenectady"]
 
 
-# process each of the csv files for comparing if they contain 500 cities
+# process the csv and read the specified rows.
+# each row is a 'metric' under the column 'metric_name' in the csv file
 def process_csv():
     os.chdir("..")
 
     health = pd.read_csv("data/Culture/Health Data.csv")
-
     compare_cities_health(health, "Park access")
     compare_cities_health(health, "Walkability")
+
+    # this column is actually being stored as 'Close Access to Healthy Foods'. see bottom last lines
     compare_cities_health(health, "Limited access to healthy foods")
 
-
+# compare the provided metric and its total population with the 500 cities list
 def compare_cities_health(df, metric_name):
     df = df.loc[df['metric_name'] == metric_name]
+
+    # we are looking for the rows which contain 'total population' under column 'group_name'
+    # this is because the file splits different groups such as black, white, asian etc.
+    # total population includes all of the groups
     df = df.loc[df['group_name'] == "total population"]
 
     list_states = list(df["state_abbr"])

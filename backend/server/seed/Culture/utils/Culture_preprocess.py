@@ -125,7 +125,8 @@ cities = ["New York", "Los Angeles", "Chicago", "Miami", "Dallas", "Philadelphia
           "Pawtucket", "Lauderhill", "Redlands", "Wilmington", "Lynwood", "Passaic", "Union City", "Palatine",
           "Mount Vernon", "Redondo Beach", "Kenner", "Schenectady"]
 
-
+# Read each of the specified csv files into a pandas dataframe
+# The row number and new column name are specified.
 def process_csv():
     os.chdir("..")
     foreign = pd.read_csv("data/Culture/ForeignBorn.csv")
@@ -138,6 +139,8 @@ def process_csv():
     preprocess(race, 36, "Two or More Races")
 
 
+# Compare all the city/states in each csv file with the list of 500 cities that we have.
+# Only store the cities that are matching with our 500 list.
 def preprocess(df, row_number, column_name):
     # Get a list columns from dataset containing city names
     list_of_city_names = list([col for col in df.columns if "!!Percent" in col])
@@ -168,7 +171,7 @@ def preprocess(df, row_number, column_name):
             unmatched_cities.append(x)
 
     # x is index in array cities/states, used to track which city or state was not matched
-    # if x is 4 that means index 4 in array cities/states was not matched
+    # e.g. if x is 4 that means index 4 in array cities/states was not matched
     for index, x in enumerate(unmatched_cities):
         for column in list_of_city_names:
             city = column.split(',')[0].replace('city', '').strip()
@@ -184,7 +187,7 @@ def preprocess(df, row_number, column_name):
     # remove cities that were just matched
     unmatched_cities = [x for x in unmatched_cities if x != '']
 
-    # match remaining cities by checking if it exists anywhere
+    # match remaining cities by checking if it exists anywhere else
     for index, x in enumerate(unmatched_cities):
         for column in list_of_city_names:
             city = column.split(',')[0].replace('city', '').strip()
