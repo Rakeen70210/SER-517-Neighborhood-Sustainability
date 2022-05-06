@@ -8,8 +8,10 @@ function start(){
     parse500Cities();
 }
 
+
+// Load 500 cities data
 function parse500Cities(){
-    fs.createReadStream('./Data/500Cities_Kai_Collection.csv')
+    fs.createReadStream('./Data/500Cities_Collection.csv')
     .pipe(csv.parse({ delimiter: ',' }))
     .on('data', (r) => {
         _500Cities.push(r);        
@@ -20,6 +22,7 @@ function parse500Cities(){
     })
 }
 
+// run each function for subdomains
 function normalization(){
     var currentPointer = dataPointer;
     // emission
@@ -41,6 +44,7 @@ function normalization(){
     writeCSV();
 }
 
+// 1 line normalization
 function general_normalization(pointer){
     var max = new Number(-1);
     for(var i = 1; i < _500Cities.length; i++){
@@ -54,6 +58,7 @@ function general_normalization(pointer){
     }
 }
 
+// normalization for energy (renewable/(non-renewable+renewable))
 function generation_normalization(pointer){
     var max = new Number(-1);
     for(var i = 1; i < _500Cities.length; i++){
@@ -69,13 +74,14 @@ function generation_normalization(pointer){
     general_normalization(pointer);
 }
 
+// write data into 500Cities_Final.csv
 function writeCSV(){
     var str = '';
     _500Cities.forEach(city => {
         str += (Object.values(city).join(",") + "\n");
     });
     // console.log(str);
-    fs.writeFile('./Data/500Cities_Kai_Final.csv', str, 'utf-8', (err) => {
+    fs.writeFile('./Data/500Cities_Final.csv', str, 'utf-8', (err) => {
         if (err) {
             console.log("Error");
         } else {

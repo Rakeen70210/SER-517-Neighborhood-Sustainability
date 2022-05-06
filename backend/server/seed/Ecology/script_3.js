@@ -10,6 +10,7 @@ function start(){
     parseStateFile();
 }
 
+// Load 500 cities data from 500Cities.csv
 function parseStateFile(){
     fs.createReadStream('./Data/500Cities.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -23,6 +24,7 @@ function parseStateFile(){
     })
 }
 
+// Load data from CHDB_data_city_all_v13.1.csv and select Frequent physical distress
 function parseDataFile(){
     fs.createReadStream('./Data/CHDB_data_city_all_v13.1.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -38,6 +40,7 @@ function parseDataFile(){
     })
 }
 
+// merge Frequent physical distress data into 500 cities
 function mergeData(){
     var header = _cityData[0];
     header.push('Frequent Physical Distress in 2018 (Percent)');
@@ -63,13 +66,14 @@ function mergeData(){
     writeCSV();
 }
 
+// write data into 500Cities_PhyicalHealth
 function writeCSV(){
     var str = '';
     _finalData.forEach(data => {
         str += data + '\n';
     });
     // console.log(str);
-    fs.writeFile('./Data/500Cities_Kai.csv', str, 'utf-8', (err) => {
+    fs.writeFile('./Data/500Cities_PhyicalHealth.csv', str, 'utf-8', (err) => {
         if (err) {
             console.log("Error");
         } else {

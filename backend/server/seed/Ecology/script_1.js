@@ -9,8 +9,9 @@ function start(){
     parse500Cities();
 }
 
+// Load 500 cities data from 500Cities.csv
 function parse500Cities(){
-    fs.createReadStream('./Data/500Cities_Kai.csv')
+    fs.createReadStream('./Data/500Cities.csv')
     .pipe(csv.parse({ delimiter: ',' }))
     .on('data', (r) => {
         var city = {
@@ -31,6 +32,7 @@ function parse500Cities(){
     })
 }
 
+// Load selected data from egrid2020_data
 function parseDataFile(){
     fs.createReadStream('./Data/egrid2020_data_Selected.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -50,6 +52,7 @@ function parseDataFile(){
     })
 }
 
+// merge selected data with 500 cities
 function mergeData(){
     var header = _500Cities[0];
     header.emission_rate = _rawData[0].emission_rate+' 2020';
@@ -73,6 +76,7 @@ function mergeData(){
     writeCSV();
 }
 
+// write data into 500Cities_energy_emission.csv
 function writeCSV(){
     var str = '';
     _finalData.forEach(city => {

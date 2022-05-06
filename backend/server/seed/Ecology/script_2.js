@@ -10,6 +10,7 @@ function start(){
     parseStateFile();
 }
 
+// Load current State level data
 function parseStateFile(){
     fs.createReadStream('./Data/State_level_data_final.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -23,6 +24,7 @@ function parseStateFile(){
     })
 }
 
+// Load farm production selected data
 function parseDataFile(){
     fs.createReadStream('./Data/Farm_production_data_Selected.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -36,6 +38,7 @@ function parseDataFile(){
     })
 }
 
+// Load state name/initials
 function parseStateName(){
     fs.createReadStream('./Data/State_Name.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -62,6 +65,7 @@ function replaceStateName(){
     mergeData();
 }
 
+// merge data into state
 function mergeData(){
     _stateData.forEach(state => {
         var data = state;
@@ -83,6 +87,7 @@ function mergeData(){
     writeCSV();
 }
 
+// write data back into State_level_data_final.csv
 function writeCSV(){
     var str = '';
     _finalData.forEach(data => {

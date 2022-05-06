@@ -3,13 +3,14 @@ const fs = require('fs');
 
 var _cityData = [];
 var _rawData = [];
-var _stateCode = [];
+var _stateName = [];
 var _finalData = [];
 
 function start(){
     parseStateFile();
 }
 
+// Load 500 cities data from 500Cities.csv
 function parseStateFile(){
     fs.createReadStream('./Data/500Cities.csv')
     .pipe(csv.parse({ delimiter: ',' }))
@@ -19,107 +20,60 @@ function parseStateFile(){
     })
     .on('end', () => {
         console.log("500 Cities load.");
-        parseStateCode();
+        parseDataFile();
     })
 }
 
-function parseStateCode(){
-    fs.createReadStream('./Data/State_Code.csv')
+// Load data from CHDB_data_city_all_v13.1.csv and select park access
+function parseDataFile(){
+    fs.createReadStream('./Data/CHDB_data_city_all_v13.1.csv')
     .pipe(csv.parse({ delimiter: ',' }))
     .on('data', (r) => {
-        // console.log(r);
-        _stateCode.push(r);
+        if(r[5] == 'Park access'){
+            // console.log(r);
+            _rawData.push(r);
+        }
     })
     .on('end', () => {
-        console.log("State code load.");
-        parseDataFiles();
+        console.log("Data file load.");
+        mergeData();
     })
 }
 
-function parseDataFiles(){
-    var resultsObj = {};
-    var promises = [];
-    var path = './Data/Transit data/alltransit_data_places_{filepath}.csv';
-    for(var i = 0; i < _stateCode.length; i++){
-        var stateCode = _stateCode[i][0];
-        var stateInit = _stateCode[i][1];
-        var filepath = path.replace("{filepath}", stateCode);
-        var promise = parseDataFile(filepath, stateInit, resultsObj);
-        promises.push(promise);
-    }
+// merge park access data into 500 cities 
+function mergeData(){
+    var header = _cityData[0];
+    header.push('Park access');
+    _finalData.push(header);
 
-    var finalPromise = promises.reduce((previousPromise, nextPromiseElement) => {
-        return previousPromise.then(() => {
-          return nextPromiseElement;
-        });
-      }, Promise.resolve());
-
-    finalPromise.then(() => {
-        // console.log("resultsObj: "+JSON.stringify(resultsObj, null, 2));
-        mergeData(resultsObj);
-    })
-
-}
-
-function parseDataFile(path, stateInit, resultsObj){
-    var dataSoFar = [];
-    return new Promise(function(resolve, reject){
-        fs.createReadStream(path)
-        .pipe(csv.parse({ delimiter: ',' }))
-        .on('data', (r) => {
-            dataSoFar.push(r);
-            //console.log(r);
-        })
-        .on('end', () => {
-            console.log("resolved : "+stateInit);
-            resultsObj[stateInit] = dataSoFar;
-            // console.log(dataSoFar);
-            resolve();
-        })
-        .on('error', () => {
-            console.log("rejected : "+stateInit)
-            reject();
-        })
-    })
-}
-
-function mergeData(resultsObj){
-    for(var state in resultsObj){
-        var pointer = 1;
-        for(var index = pointer; index < _cityData.length; index++){
-            var data = _cityData[index];
-            if(data[3] == state){
-                var matched = false;
-                for(var index2 = 1; index2 < resultsObj[state].length; index2++){
-                    // console.log(resultsObj[state][index2][1]);
-                    if(data[1] == cityName(resultsObj[state][index2][1])){
-                        matched = true;
-                        data.push(resultsObj[state][index2][5]);
-                        break;
-                    }
-                }
-                if(!matched){
-                    // data.push('N/A');
-                }
-                _cityData[index] = data;
-                pointer = index;
+    for(var index = 1; index < _cityData.length; index++){
+        var data = _cityData[index];
+        var matched = false;
+        for(var index2 = 0; index2 < _rawData.length; index2++){
+            if(data[1] == cityName(_rawData[index2][4]) && data[3] == _rawData[index2][0]){
+                matched = true;
+                data.push(_rawData[index2][11]);
+                break;
             }
         }
-        pointer = 1;
+        if(!matched){
+            data.push('N/A');
+        }
+        _finalData.push(data);
     }
     
-    _cityData[0].push('alltransit_performance_score');
-    // console.log(_cityData);
+    // console.log(_finalData);
     writeCSV();
 }
 
+// write data into 500Cities_Park.csv
 function writeCSV(){
     var str = '';
-    _cityData.forEach(data => {
+    _finalData.forEach(data => {
         str += data + '\n';
     });
     // console.log(str);
-    fs.writeFile('./Data/500Cities_Kai_Transit.csv', str, 'utf-8', (err) => {
+    fs.writeFile('./Data/500Cities_Park.csv', str, 'utf-8', (err) => {
         if (err) {
             console.log("Error");
         } else {
@@ -129,26 +83,12 @@ function writeCSV(){
 }
 
 function cityName(name){
-    if(name == '"Boise City"'){
+    if(name == 'Boise City'){
         return 'Boise';
-    } else if(name == '"San Buenaventura (Ventura)"'){
+    } else if(name == 'San Buenaventura (Ventura)'){
         return 'San Buenaventura';
-    } else if(name == '"Athens-Clarke County unified government (balance)"'){
-        return 'Athens';
-    } else if(name == '"Macon-Bibb County"'){
-        return 'Macon';
-    } else if(name == '"Augusta-Richmond County consolidated government (balance)"'){
-        return 'Augusta';
-    } else if(name == '"Lexington-Fayette"'){
-        return 'Lexington';
-    } else if(name == '"Urban Honolulu"'){
-        return 'Honolulu';
-    } else if(name == '"Nashville-Davidson metropolitan government (balance)"'){
-        return 'Nashville';
-    } else if(name == '"Indianapolis city (balance)"'){
-        return 'Indianapolis';
     } else{
-        return name.replaceAll('"','');
+        return name;
     }
 }
 

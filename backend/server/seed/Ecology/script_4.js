@@ -1,91 +1,160 @@
 const csv = require('csv-parse');
 const fs = require('fs');
 
-var _500Cities = [];
+var _cityData = [];
 var _rawData = [];
+var _stateCode = [];
 var _finalData = [];
 
 function start(){
-    parse500Cities();
+    parseStateFile();
 }
 
-function parse500Cities(){
-    fs.createReadStream('./Data/500Cities_Kai.csv')
+// Load 500 cities data from 500Cities.csv
+function parseStateFile(){
+    fs.createReadStream('./Data/500Cities.csv')
     .pipe(csv.parse({ delimiter: ',' }))
     .on('data', (r) => {
-        var city = {
-            city_id: r[0],
-            city_name: r[1],
-            state_name: r[2],
-            state_id: r[3],
-            county_name: r[4],
-            county_fips: r[5],
-            zips: r[10]
-        }
-        // console.log(city);
-        _500Cities.push(city);        
+        // console.log(r);
+        _cityData.push(r);
     })
     .on('end', () => {
         console.log("500 Cities load.");
-        parseDataFile();
+        parseStateCode();
     })
 }
 
-function parseDataFile(){
-    fs.createReadStream('./Data/egrid2020_data_Selected.csv')
+// Load state code from State_Code.csv
+function parseStateCode(){
+    fs.createReadStream('./Data/State_Code.csv')
     .pipe(csv.parse({ delimiter: ',' }))
     .on('data', (r) => {
-        var data = {
-            state_id: r[0],
-            emission_rate: r[1],
-            nonrenewables_net_generation: r[2],
-            renewables_net_generation: r[3]
-        }
-        console.log(data);
-        _rawData.push(data);        
+        // console.log(r);
+        _stateCode.push(r);
     })
     .on('end', () => {
-        console.log("Data file load.");
-        mergeData();
+        console.log("State code load.");
+        parseDataFiles();
     })
 }
 
-function mergeData(){
-    var header = _500Cities[0];
-    header.emission_rate = _rawData[0].emission_rate+' 2020';
-    header.nonrenewables_net_generation = _rawData[0].nonrenewables_net_generation+' 2020';
-    header.renewables_net_generation = _rawData[0].renewables_net_generation+' 2020';
-    _finalData.push(header);
-
-    for(var index = 1; index < _500Cities.length; index++){
-        var city = _500Cities[index];
-        _rawData.forEach(data => {
-            if(city.state_id == data.state_id){
-                city.emission_rate = data.emission_rate;
-                city.nonrenewables_net_generation = data.nonrenewables_net_generation;
-                city.renewables_net_generation = data.renewables_net_generation;
-            }
-        });
-        // console.log(city);
-        _finalData.push(city);
+// Load all transit data
+function parseDataFiles(){
+    var resultsObj = {};
+    var promises = [];
+    var path = './Data/Transit data/alltransit_data_places_{filepath}.csv';
+    for(var i = 0; i < _stateCode.length; i++){
+        var stateCode = _stateCode[i][0];
+        var stateInit = _stateCode[i][1];
+        var filepath = path.replace("{filepath}", stateCode);
+        var promise = parseDataFile(filepath, stateInit, resultsObj);
+        promises.push(promise);
     }
 
+    var finalPromise = promises.reduce((previousPromise, nextPromiseElement) => {
+        return previousPromise.then(() => {
+          return nextPromiseElement;
+        });
+      }, Promise.resolve());
+
+    finalPromise.then(() => {
+        // console.log("resultsObj: "+JSON.stringify(resultsObj, null, 2));
+        mergeData(resultsObj);
+    })
+
+}
+
+function parseDataFile(path, stateInit, resultsObj){
+    var dataSoFar = [];
+    return new Promise(function(resolve, reject){
+        fs.createReadStream(path)
+        .pipe(csv.parse({ delimiter: ',' }))
+        .on('data', (r) => {
+            dataSoFar.push(r);
+            //console.log(r);
+        })
+        .on('end', () => {
+            console.log("resolved : "+stateInit);
+            resultsObj[stateInit] = dataSoFar;
+            // console.log(dataSoFar);
+            resolve();
+        })
+        .on('error', () => {
+            console.log("rejected : "+stateInit)
+            reject();
+        })
+    })
+}
+
+// merge transit data into 500 cities
+function mergeData(resultsObj){
+    for(var state in resultsObj){
+        var pointer = 1;
+        for(var index = pointer; index < _cityData.length; index++){
+            var data = _cityData[index];
+            if(data[3] == state){
+                var matched = false;
+                for(var index2 = 1; index2 < resultsObj[state].length; index2++){
+                    // console.log(resultsObj[state][index2][1]);
+                    if(data[1] == cityName(resultsObj[state][index2][1])){
+                        matched = true;
+                        data.push(resultsObj[state][index2][5]);
+                        break;
+                    }
+                }
+                if(!matched){
+                    // data.push('N/A');
+                }
+                _cityData[index] = data;
+                pointer = index;
+            }
+        }
+        pointer = 1;
+    }
+    
+    _cityData[0].push('alltransit_performance_score');
+    // console.log(_cityData);
     writeCSV();
 }
 
+// write data into 500Cities_Transit.csv
 function writeCSV(){
     var str = '';
-    _finalData.forEach(city => {
-        str += (Object.values(city).join(",") + "\n");
+    _cityData.forEach(data => {
+        str += data + '\n';
     });
     // console.log(str);
-    fs.writeFile('./Data/500Cities_energy_emission.csv', str, 'utf-8', (err) => {
+    fs.writeFile('./Data/500Cities_Transit.csv', str, 'utf-8', (err) => {
         if (err) {
             console.log("Error");
         } else {
             console.log("Write CSV finish.");
         }
     })
+}
+
+function cityName(name){
+    if(name == '"Boise City"'){
+        return 'Boise';
+    } else if(name == '"San Buenaventura (Ventura)"'){
+        return 'San Buenaventura';
+    } else if(name == '"Athens-Clarke County unified government (balance)"'){
+        return 'Athens';
+    } else if(name == '"Macon-Bibb County"'){
+        return 'Macon';
+    } else if(name == '"Augusta-Richmond County consolidated government (balance)"'){
+        return 'Augusta';
+    } else if(name == '"Lexington-Fayette"'){
+        return 'Lexington';
+    } else if(name == '"Urban Honolulu"'){
+        return 'Honolulu';
+    } else if(name == '"Nashville-Davidson metropolitan government (balance)"'){
+        return 'Nashville';
+    } else if(name == '"Indianapolis city (balance)"'){
+        return 'Indianapolis';
+    } else{
+        return name.replaceAll('"','');
+    }
 }
 
 start();
